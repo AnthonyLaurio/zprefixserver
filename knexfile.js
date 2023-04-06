@@ -3,6 +3,7 @@ require('dotenv').config();
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
+console.log(process.env.CONNECTION_STRING);
 module.exports = {
 
   development: {
