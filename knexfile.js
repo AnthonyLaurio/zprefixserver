@@ -8,7 +8,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: process.env.CONNECTION_STRING
+    connection: `${process.env.CONNECTION_STRING}`
   },
 
   staging: {
@@ -28,12 +28,8 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
-    connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
+    client: 'pg',
+    connection: process.env.CONNECTION_STRING,
     pool: {
       min: 2,
       max: 10

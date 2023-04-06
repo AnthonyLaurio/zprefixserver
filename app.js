@@ -10,7 +10,9 @@ const app = express();
 
 const corsOptions = {
   origin: true, //included origin as true
-  credentials: true, //included credentials as true
+  credentials: true,
+  
+
 };
 
 app.use(express.json());
