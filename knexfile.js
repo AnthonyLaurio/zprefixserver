@@ -7,7 +7,7 @@ console.log(process.env.CONNECTION_STRING);
 module.exports = {
 
   development: {
-    client: 'pg',
+    client: 'postgresql',
     connection: `${process.env.CONNECTION_STRING}`
   },
 
